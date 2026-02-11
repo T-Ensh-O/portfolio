@@ -77,24 +77,41 @@ const projects = (await getCollection('work'))
 				</div>
 			</section>
 
-			<section class="section with-background bg-variant">
+			<main class="wrapper stack gap-20 lg:gap-48">
+			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						Coming Soon™.
-					</p>
+					<h3>Mes derniere veille numérique !</h3>
+					<p>Découvrez mes recherches sur les tendances du numérique, de la cybersécurité et des technologies émergentes.</p>
 				</header>
 
 				<div class="gallery">
-					<Grid variant="small">
+					<Grid variant="offset">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
+							projects.map((journal) => (
+								<li>
+									<PortfolioPreview project={journal} />
 								</li>
 							))
 						}
 					</Grid>
+				</div>
+
+				<div class="cta">
+					<CallToAction href="/journal/">
+						Toutes les veilles numérique 
+						<Icon icon="arrow-right" size="1.2em" />
+					</CallToAction>
+				</div>
+			</section>
+
+			<section class="section with-background bg-variant">
+				<header class="section-header stack gap-2 lg:gap-4">
+					<h3></h3>
+					<p>
+					</p>
+				</header>
+
+				
 				</div>
 			</section>
 		</main>
