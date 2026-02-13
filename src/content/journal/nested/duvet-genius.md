@@ -1,4 +1,4 @@
-src/content/journal/DRAGON BLOOD METHOD VEILLE.md
+---
 title: Duvet Genius
 publishDate: 2020-03-04 00:00:00
 img: /assets/stock-3.jpg
