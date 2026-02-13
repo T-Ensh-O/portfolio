@@ -1,23 +1,36 @@
 ---
 title: Bloom Box
 publishDate: 2019-12-01 00:00:00
-img: /assets/stock-2.jpg
+img: /assets/DRAGONBLOOD.png
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |
-  We paired with a cutting-edge music API and a team of horticulturalists
-  to build AI-generated playlists that maximize houseplant health.
+  Comment le Dragonblood fonctionne ?
 tags:
-  - Dev
-  - Branding
-  - Backend
+  - Connection
+  - Downgrade
+  - DragonBlood
+  - WPA3
+  - 2019
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+Les vulnérabilités Dragonblood sont une série de failles de sécurité découvertes dans le protocole WPA3, notamment dans son mécanisme d’authentification Dragonfly. Elles ont été identifiées par les chercheurs Mathy Vanhoef et Eyal Ronen, les mêmes qui avaient découvert la faille KRACK sur WPA2.
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+Nature des vulnérabilités Dragonblood n’est pas une seule faille, mais cinq défauts de conception regroupés en deux catégories principales :
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+Attaques de rétrogradation : Permettent à un attaquant de forcer un appareil WPA3 à se connecter via WPA2, rendant possible une attaque par dictionnaire sur le handshake partiel.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Attaques par canaux auxiliaires (side-channel) : Exploitent des fuites d’information via le temps d’exécution ou l’accès à la mémoire (cache), permettant de deviner progressivement le mot de passe.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+Impact Un attaquant proche du réseau peut récupérer le mot de passe Wi-Fi. Les données sensibles (mots de passe, messages, informations bancaires) peuvent être compromises.
+
+Ces vulnérabilités affectent aussi EAP-pwd, utilisé dans les réseaux WPA2 et WPA3 pour la rétrocompatibilité.
+
+Correctifs et mises à jour La WiFi Alliance a publié des mises à jour de sécurité pour corriger ces failles. Les fabricants ont dû intégrer des correctifs via des mises à jour de firmware. Des correctifs sont disponibles pour des équipements comme FortiOS, Meru AP/Controller, et d’autres appareils.
+
+Avertissements Les vulnérabilités ont été confirmées sur des appareils récents, notamment le Samsung Galaxy S10.
+
+Le processus de développement fermé de la WiFi Alliance a été critiqué pour avoir empêché une vérification plus large par la communauté open-source. Important : Bien que les correctifs existent, les réseaux non mis à jour restent vulnérables. Il est essentiel de vérifier que les routeurs et appareils sont équipés des derniers firmware.
+
+Pour plus d’information: https://www.zdnet.fr/actualites/dragonblood-de-nouvelles-vulnerabilites-trouvees-dans-le-standard-wifi-wpa3-39888783.htm
+
+
