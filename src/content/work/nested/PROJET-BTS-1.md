@@ -34,4 +34,7 @@ Matériel : TP-Link CPE710 (Bridge), UeeVii AX3000 (Routeur), TP-Link TL-SG116 (
 
 Systèmes : Windows Server 2022, Console Admin UeeVii.
 
-lien du projet:https://docs.google.com/document/d/1WjRLIeOgD3OxHsRY3eyzPtGGCh8W_Gv9iKiGPWelbJ4/edit?usp=sharing
+lien du projet 👇
+https://docs.google.com/document/d/1WjRLIeOgD3OxHsRY3eyzPtGGCh8W_Gv9iKiGPWelbJ4/edit?usp=sharing
+
+Ou télécharger <a href="/Documents/fiche-BTS-SIO-1.pdf" download="Fiche_Projet_SIO_1.pdf">ici</a>
