@@ -1,22 +1,37 @@
 ---
-title: Duvet Genius
-publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
+title: Interconnexion réseau sans fil sécurisée entre deux bâtiments
+publishDate: 2026-02-17 00:00:00
+img: /assets/SCHEMA LOGIQUE BTS BLANC PROJET 1.png
 img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
 description: |
-  We developed a virtual showcase for the softest bedding imaginable.
+ Déploiement d'un pont Wi-Fi point à point sécurisé en WPA3 avec des équipements TP-Link pour relier deux bâtiments distants.
 tags:
-  - Design
-  - Dev
-  - Branding
+  - Projet 1
+  - WPA3
+  - WIFI-BRIDGES
+  - ENTREPRISE
+  - BTS BLANC
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+Dans le cadre de ma formation en BTS SIO option SISR, j'ai réalisé un projet visant à désenclaver numériquement un bâtiment secondaire au sein d'une entreprise. L'objectif principal était de fournir un accès Internet stable et performant à des utilisateurs n'ayant aucune couverture réseau préalable.
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+ Pour répondre à ce besoin, j'ai conçu et déployé une infrastructure s'appuyant sur un pont Wi-Fi point à point sécurisé par le protocole WPA3. Ce projet m'a permis de mobiliser des compétences variées, allant de l'installation physique des équipements (bridges TP-Link, routeurs Wi-Fi 6) à la configuration de services réseaux essentiels comme le DHCP sur Windows Server 2022.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Compétences techniques mises en œuvre :
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+Infrastructure : Configuration de bridges Wi-Fi extérieurs et de switches Gigabit pour l'interconnexion de sites.
+
+Réseau : Mise en place d'un plan d'adressage IP statique et gestion des baux DHCP.
+
+Sécurité : Sécurisation des liaisons sans fil via le protocole WPA3 pour prévenir les intrusions.
+
+Maintenance : Tests de connectivité et de bande passante pour garantir la stabilité de la solution.
+
+Outils et matériels utilisés :
+
+Matériel : TP-Link CPE710 (Bridge), UeeVii AX3000 (Routeur), TP-Link TL-SG116 (Switch).
+
+Systèmes : Windows Server 2022, Console Admin UeeVii.
+
+lien du projet:https://docs.google.com/document/d/1WjRLIeOgD3OxHsRY3eyzPtGGCh8W_Gv9iKiGPWelbJ4/edit?usp=sharing
