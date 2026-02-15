@@ -8,8 +8,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
-				title="A propos"
-				tagline="Merci de votre visite. Vous trouverez ci‑dessous davantage d’informations sur mon parcours et mon profil."
+				title="À propos de moi"
+				tagline="Merci de votre lecture. Vous trouverez ci‑dessous davantage d’informations sur mon parcours et mon profil."
 			>
 				<img
 					width="1553"
@@ -33,54 +33,53 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					</p>
 				</div>
 			</section>
-			<section>
-				<h2 class="section-title">Diplomes</h2>
-				<div class="content">
-					<p>- BTS SIO – Option SISR
-Formation axée sur les systèmes, réseaux, cybersécurité et l’administration d’infrastructures.
-- Certification Google – IT Support
-Compétences en support informatique, diagnostic, maintenance, gestion des systèmes et bonnes pratiques IT.
-- Baccalauréat STI2D
-Formation technologique orientée innovation, technologies industrielles et compréhension des systèmes.
-</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>- Administration systèmes & réseaux
-- Gestion d’infrastructures et services IT
-- Bases en cybersécurité
-- Travail en équipe & communication
-- Organisation, rigueur 
-</p>
+		
+
+		<section>
+    <h2 class="section-title">Hard Skills</h2>
+    <div class="content">
+        <p>- <strong>Administration systèmes & réseaux</strong> : Bases du dépannage et configuration de petits réseaux locaux.</p>
+        <p>- <strong>Gestion d’infrastructures et services IT</strong> : Installation et mise à jour de logiciels et de matériel informatique.</p>
+        <p>- <strong>Maintenance matérielle</strong> : Montage de PC, diagnostic de pannes et remplacement de composants.</p>
+        <p>- <strong>Support utilisateur</strong> : Aide et assistance technique.</p>
+        <p>- <strong>Bases de la virtualisation</strong> : Utilisation de machines virtuelles pour tester des systèmes (VirtualBox, VMware).</p>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Soft Skills</h2>
+    <div class="content">
+        <p>- <strong>Capacité d'adaptation</strong> : Essentielle pour suivre l'évolution rapide des technologies et des menaces en cybersecurité(OWASP).</p>
+        <p>- <strong>Pédagogie & Communication</strong> : Savoir vulgariser des concepts techniques (expériences en médiation numérique).</p>
+        <p>- <strong>Gestion des priorités & Planification</strong> : Capacité à estimer la charge de travail, hiérarchiser les urgences et établir des plans d'action structurés pour garantir la continuité de service.</p>
+        <p>- <strong>Esprit d'analyse et de diagnostic</strong> : Approche méthodique pour identifier la source d'un problème (Troubleshooting).</p>
+        <p>- <strong>Autonomie & Curiosité</strong> : Capacité à s'auto-former et à chercher des solutions par soi-même.</p>
+        <p>- <strong>Sens des responsabilités</strong> : Respect de la confidentialité des données et des règles de sécurité.</p>
+    </div>
+</section>
 
 
 	<div style="
     display: flex; 
-    flex-direction: column; /* Aligne les éléments verticalement */
-    align-items: center;    /* Centre la phrase ET le bouton horizontalement */
-    gap: 15px;              /* Espace précis entre la phrase et le bouton */
-    margin-top: 40px; 
-    margin-bottom: 40px;
+    justify-content: center; 
+    align-items: center; 
+    grid-column: 1 / -1; 
+    margin-top: 50px; 
+    margin-bottom: 50px;
     width: 100%;
 ">
-    <p style="color: white; font-family: sans-serif; margin: 0; font-size: 1.1rem; font-weight: 500;">
-       
-    </p>
-
-    <a href="/Documents/cv_HAITEM_BEJAOUI.pdf" download="CV_Haitem_BTS_SIO_SISR.pdf" style="
-        padding: 12px 28px;
+    <a href="/Documents/cv_HAITEM_BEJAOUI.pdf" target="_blank" style="
+        padding: 14px 32px;
         background: linear-gradient(90deg, #b35686 0%, #5d0f8f 100%);
-        color: white;
+        color: rgb(255, 255, 255);
         text-decoration: none;
         border-radius: 50px;
-        font-family: Arial, sans-serif;
+        font-family: sans-serif;
         font-weight: bold;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 4px 15px rgba(252, 252, 252, 0.4);
         transition: transform 0.2s;
     ">
-        Télécharger mon CV (PDF)
+        Consulter mon CV (PDF)
     </a>
 </div>
 
@@ -93,6 +92,20 @@ Formation technologique orientée innovation, technologies industrielles et comp
 </BaseLayout>
 
 <style>
+
+
+
+
+/* Cible tous les paragraphes dans la section Background */
+.content p {
+    margin-bottom: 1.5rem; /* Crée l'espace entre les paragraphes */
+    line-height: 1.6;      /* Augmente l'interligne pour plus de clarté */
+}
+
+/* Supprime l'espace après le dernier paragraphe pour éviter un trou inutile */
+.content p:last-child {
+    margin-bottom: 0;
+}
 	.about {
 		display: flex;
 		flex-direction: column;
