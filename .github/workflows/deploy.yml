@@ -2,8 +2,8 @@ name: Deploy Portfolio
 
 on:
   push:
-    branches: [ main ] # Vérifie bien que ta branche s'appelle main
-  workflow_dispatch:   # Cette ligne permet de lancer le robot manuellement
+    branches: [ main ]
+  workflow_dispatch: 
 
 permissions:
   contents: read
@@ -20,7 +20,8 @@ jobs:
       - name: Install, build, and upload
         uses: withastro/action@v3
         with:
-          path: ./portfolio # Il entre dans ton dossier portfolio
+          # On a mis un seul point ici pour corriger l'erreur de dossier
+          path: . 
 
   deploy:
     needs: build
